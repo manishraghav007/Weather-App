@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Wheather Report System</title>
+
+    <style>
+        .nav-brand{
+            height: 30px;
+            width : 30px;
+        }
+
+        .home-c{
+          padding: 0px;
+          margin : 0px;
+        }
+
+        .home-img{
+            width : 100%;
+            height : 600px;
+        }
+
+        .home-text{
+          position: relative;
+          bottom : 400px;
+          color : white;
+          font-weight: 800;
+          font-size: 50px;
+        }
+
+        .homepara{
+          font-weight: 700;
+          color:rgb(3, 3, 69);
+          font-size: 20;
+          
+        }
+
+        .contact-box{
+          width : 100%;
+          background-color: black;
+          height: 220px;
+          padding : 0px;
+          margin : 0px
+        }
+
+        .carousel-inner img{
+          width : 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href=""><img class="nav-brand" src="https://imgs.search.brave.com/OVzPtw0-7d5zNgt0iIFXSedunTRAfkQ0VdRJzF09Cpo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/NTQ3ODk0NzY2NjIt/NTNlYjIzYmE1OTA3/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OGQy/VmhkR2hsY254bGJu/d3dmSHd3Zkh4OE1B/PT0.jpeg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="/about">About</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="/report">Reports</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white" href="/predictions">Prediction</a>
+              </li>
+            
+            <li class="nav-item ">
+                <a class="nav-link text-white" href="/addreport">addreports</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="container-fluid home-c">
+        
+          <img class="home-img" src="https://imgs.search.brave.com/MEqW7znLHLYWadL6C6MGmF1sQ5A18_16vk5KJM065jU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDc3/MTEwNzA4L3Bob3Rv/L3dlYXRoZXItZm9y/ZWNhc3Qud2VicD9i/PTEmcz0xNzA2Njdh/Jnc9MCZrPTIwJmM9/Y0pEblJmYXJXVFJW/clRSR0J2ODJhUVVZ/bWtnWnAzRlRDU0xL/TFhkcmNDVT0" alt="no-image" />
+
+          <center><h1 class="home-text">Welcome to Weather Reports App</h1></center>
+           
+
+          <p class="home-para mx-3">
+                
+            The Weather Reports App represents a sophisticated Django-based solution tailored to provide users with a comprehensive weather forecasting experience. At its core, the application seamlessly integrates with leading weather APIs to fetch and present real-time weather data for specified locations. This functionality enables users to access accurate weather forecasts, empowering them to make informed decisions regarding their activities and plans. Through a user-friendly interface, individuals can effortlessly input their desired locations, triggering the app's backend processes to retrieve pertinent weather information. Leveraging Django's robust framework, the app ensures that user inputs undergo thorough validation to maintain data integrity and prevent erroneous entries, thereby enhancing the overall user experience.
+
+          Moreover, the Weather Reports App extends its capabilities beyond mere weather reporting by incorporating features for user interaction and customization. For instance, users can personalize their weather reports by specifying preferences such as temperature units or weather parameters of interest. Additionally, the app facilitates user engagement through functionalities such as weather alerts, notifications, and interactive visualizations, thereby enriching the user experience and fostering continued usage.
+          
+          In tandem with its weather reporting functionalities, the app offers a dynamic platform for users to engage in commerce-related activities, such as ordering custom weather reports or subscribing to premium weather services. Through seamless integration with e-commerce functionalities, users can place orders, make payments securely, and receive tailored weather reports based on their preferences and requirements.
+          
+          Furthermore, the Weather Reports App prioritizes data security and privacy, adhering to best practices and industry standards to safeguard user information and ensure confidentiality. Robust encryption protocols and authentication mechanisms are implemented to mitigate security risks and protect sensitive user data from unauthorized access or breaches.
+          
+          In summary, the Weather Reports App stands as a testament to the power and versatility of Django in building sophisticated web applications that seamlessly integrate diverse functionalities, deliver exceptional user experiences, and uphold the highest standards of data security and privacy.
+        
+
+          </p>
+        
+        </div>
+
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://imgs.search.brave.com/iSEelJWqPyyld8HGQYkVqVBYKCa9VWSm9wYvkxbOOsA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE1/Nzc5MjkzNC9waG90/by9maXNoaW5nLWJl/Zm9yZS1pdC1yYWlu/cy1tb25zb29uLXNl/YXNvbi1rZXJhbGEt/aW5kaWEuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVo1Mnl6/X2pmSHlzVVo5eUdf/ZEllSkFLVlNlbURJ/UV91bkVBM3JRdUJr/TFk9" alt="Los Angeles" width="1000" height="700">
+              <div class="carousel-caption">
+                
+              </div>   
+            </div>
+            <div class="carousel-item">
+              <img src="https://imgs.search.brave.com/WOlv6AEjIop3L-YlGDh0Vg4NmHSGUBwFj_I9oo_kQec/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODAxOTM3NjkyMTAt/YjhkMWMwNDlhN2Q5/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TWpCOGZI/ZGxZWFJvWlhKOFpX/NThNSHg4TUh4OGZE/QT0.jpeg" alt="Chicago" width="1000" height="700">
+              <div class="carousel-caption">
+                
+              </div>   
+            </div>
+            <div class="carousel-item">
+              <img src="https://imgs.search.brave.com/2RBM_Dp4A0-hgQ_Q7364nU_1Y1JWii4tHzBE-OgCz84/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by93/ZWF0aGVyLWVmZmVj/dHMtY29tcG9zaXRp/b25fMjMtMjE0OTg1/MzI5OC5qcGc_c2l6/ZT02MjYmZXh0PWpw/Zw" alt="New York" width="1000" height="700">
+              <div class="carousel-caption">
+                
+              </div>   
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
+        <div class="container-fluid contact-box mt-4">
+          <div class="row">
+            <div class="col-md-6">
+                <ul class="list-unstyled mt-5">
+                    <li class="text-white mx-5">@wheatherapp. alrights reserved</li>
+                    <li class="text-white mt-2 mx-5">Email: <a href="mailto:mk1240598@gmail.com">mk1240598@gmail.com</a></li>
+                    <li class="text-white mt-2 mx-5">Phone: +91 7995356278</li>
+                </ul>
+            </div>
+      </div>
+      
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>reports page</title>
+
+    <style>
+        .nav-brand{
+            height: 30px;
+            width : 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href=""><img class="nav-brand" src="https://imgs.search.brave.com/OVzPtw0-7d5zNgt0iIFXSedunTRAfkQ0VdRJzF09Cpo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/NTQ3ODk0NzY2NjIt/NTNlYjIzYmE1OTA3/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TW54OGQy/VmhkR2hsY254bGJu/d3dmSHd3Zkh4OE1B/PT0.jpeg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="/about">About</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="/report">Reports</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white" href="/predictions">Prediction</a>
+              </li>
+            
+            <li class="nav-item ">
+                <a class="nav-link text-white" href="/addreport">addreports</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container mt-5">
+        <h1>Weather Reports : </h1>
+
+       
+
+        <div class="row">
+
+            <table class="table table-striped table-dark mt-5">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">city name</th>
+                    <th scope="col">current condition</th>
+                    <th scope="col">humidity</th>
+                    <th scope="col">temp</th>
+                    <th scope="col">wind</th>
+                    <th scope="col">forecast</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for i in data %}
+                  <tr>
+                   
+                    <td>{{i.city_name}}</td>
+                    <td>{{i.cur_con}}</td>
+                    <td>{{i.humidity}}</td>
+                    <td>{{i.temp}}</td>
+                    <td>{{i.wind}}</td>
+                    <td>{{i.forecast}}</td>
+                    
+                    
+                  </tr>
+                  {% endfor%}
+                </tbody>
+              </table>
+          
+          
+
+        </div>
+      </div>
+
+    
+</body>
+</html>
